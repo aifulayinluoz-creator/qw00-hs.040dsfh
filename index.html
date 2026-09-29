@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SketchShare - Comunidad para Amantes del Dibujo</title>
+    <meta name="description" content="SketchShare es la comunidad online para artistas y amantes del dibujo. Comparte tus creaciones, conecta con otros artistas, chatea y encuentra inspiración." />
+    <meta name="keywords" content="dibujo, arte, comunidad, artistas, compartir dibujos, sketch, ilustración" />
+    <meta name="author" content="SketchShare" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="SketchShare - Comunidad para Amantes del Dibujo" />
+    <meta property="og:description" content="Comparte tus creaciones artísticas, conecta con otros artistas y encuentra inspiración en SketchShare." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://sketchshare.app" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+      html.dark, html.dark body { background-color: #0a0a0a !important; color: #ffffff; }
+      html.light, html.light body { background-color: #ffffff !important; color: #000000; }
+    </style>
+    <script>
+      (function() {
+        const saved = localStorage.getItem('sketchshare-theme');
+        const theme = saved || 'dark';
+        document.documentElement.classList.add(theme);
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
